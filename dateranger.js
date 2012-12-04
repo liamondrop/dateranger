@@ -111,8 +111,11 @@
         },
 
         conceal: function () {
-            this.$container.fadeOut(function () { $(this).empty(); });
-            this.$parent.removeClass('open');
+            var that = this;
+            this.$container.fadeOut(function () {
+                $(this).empty();
+                this.$parent.removeClass('open');
+            });
         },
 
         generateCalendar: function (selectedDate) {
