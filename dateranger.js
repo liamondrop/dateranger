@@ -114,7 +114,7 @@
             var that = this;
             this.$container.fadeOut(function () {
                 $(this).empty();
-                this.$parent.removeClass('open');
+                that.$parent.removeClass('open');
             });
         },
 
